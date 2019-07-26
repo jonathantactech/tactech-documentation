@@ -23,12 +23,12 @@
   - **git fetch gitlab**
   - **git log --pretty=format:'%Cred%h%Creset %C(magenta)%s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit gitlab/test...origin/test | grep 'Merge pull request'**
 11. Informar por canal desplieges-svl la salida del diff
-- Formato:
-  *Deploy:* BFF
-  *Env:* Test
-  *PRs:*
+- Formato:  
+  \*Deploy:\* BFF   
+  \*Env:\* Test  
+  \*PRs:\*  
   ```
-  [CHANGE!]{hash} Merge pull request #{PR} from Wolox/{branch} ({time} ago) <{user}>
+  {hash} Merge pull request #{PR} from Wolox/{branch} ({time} ago) <{user}>
   ```
 12. Ahora tienes que hacer:
   - **git push gitlab test:test (development:development) o git push gitlab master:master para prod** 
